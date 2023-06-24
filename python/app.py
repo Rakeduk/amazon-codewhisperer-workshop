@@ -4,7 +4,7 @@ from api.infrastructure import APIStack
 from integration.infrastructure import IntegrationStack
 from recognition.infrastructure import RekognitionStack
 
-DEFAULT_REGION = 'us-west-2'
+DEFAULT_REGION = 'us-east-1'
 
 app = cdk.App()
 apiStack = APIStack(app, "APIStack", env=cdk.Environment(region=DEFAULT_REGION))
